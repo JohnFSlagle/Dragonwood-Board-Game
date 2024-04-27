@@ -1,12 +1,20 @@
+//Point system
+//new monster after one is defeated
+//simple animations
+//different cards
+//monster weaknesses
+
+
+
 let player1Cards = 5;
 let player2Cards = 5;
 let currentPlayer = "player1";
 let selectedMonster = "";
 let monsters = {
   troll: { name: "Troll", hp: 10 },
-  greenFuzzball: { name: "Green Fuzzball", hp: 15 },
+  GreenFuzzball: { name: "Green Fuzzball", hp: 15 },
   dragon: { name: "Dragon", hp: 20 },
-  pinkMeanie: { name: "Pink Meanie", hp: 25 },
+  PinkMeanie: { name: "Pink Meanie", hp: 25 },
   goblin: { name: "Goblin", hp: 12 },
 };
 
@@ -116,7 +124,7 @@ function chooseMonster(monsterName) {
 
 document.querySelectorAll(".monster").forEach((monster) => {
   monster.addEventListener("click", function () {
-    selectMonster(this.getAttribute("data-monster"));
+    selectedMonster(this.getAttribute("data-monster"));
   });
 });
 
