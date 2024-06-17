@@ -10,29 +10,54 @@
     <div class="container">
       <h1 class="firsth1">Dragonwood</h1>
       <div class="monsters">
-        <div class="monster" onclick="chooseMonster('troll')">
+        <div
+          class="monster"
+          data-monster="troll"
+          onclick="chooseMonster('troll')"
+        >
           <h3>Troll</h3>
           <p>HP: <span>10</span></p>
           <img src="images/troll1.png" alt="Troll" height="300" width="500" />
         </div>
-        <div class="monster" onclick="chooseMonster('GreenFuzzball')">
+        <div
+          class="monster"
+          data-monster="GreenFuzzball"
+          onclick="chooseMonster('GreenFuzzball')"
+        >
           <h3>Green Fuzzball</h3>
           <p>HP: <span>15</span></p>
-          <img src="images/monster.jpg" alt="Green Fuzzball" height="350" width="450" />
+          <img
+            src="images/monster.jpg"
+            alt="Green Fuzzball"
+            height="350"
+            width="450"
+          />
         </div>
-        <div class="monster" onclick="chooseMonster('dragon')">
+        <div
+          class="monster"
+          data-monster="dragon"
+          onclick="chooseMonster('dragon')"
+        >
           <h3>Dragon</h3>
-          <p>HP: <span>20</span></p>
+          <p>HP: <span>25</span></p>
           <img src="images/dragon2.png" alt="Dragon" height="350" />
         </div>
-        <div class="monster" onclick="chooseMonster('PinkMeanie')">
+        <div
+          class="monster"
+          data-monster="PinkMeanie"
+          onclick="chooseMonster('PinkMeanie')"
+        >
           <h3>Pink Meanie</h3>
-          <p>HP: <span>25</span></p>
+          <p>HP: <span>20</span></p>
           <img src="images/monster2.jpg" alt="Pink Meanie" height="350" />
         </div>
-        <div class="monster" onclick="chooseMonster('goblin')">
+        <div
+          class="monster"
+          data-monster="goblin"
+          onclick="chooseMonster('goblin')"
+        >
           <h3>Goblin</h3>
-          <p>HP: <span>12</span></p>
+          <p>HP: <span>5</span></p>
           <img src="images/Sneaky-Goblin.png" alt="Goblin" height="350" />
         </div>
       </div>
@@ -40,12 +65,14 @@
         <div id="player1" class="player">
           <h2>Player 1</h2>
           <p>Cards: <span id="player1-cards">5</span></p>
+          <p>Points: <span id="player1-points">0</span></p>
           <button onclick="attack('player1')">Attack</button>
           <button onclick="drawCard('player1')">Draw Card</button>
         </div>
         <div id="player2" class="player">
           <h2>Player 2</h2>
           <p>Cards: <span id="player2-cards">5</span></p>
+          <p>Points: <span id="player2-points">0</span></p>
           <button onclick="attack('player2')">Attack</button>
           <button onclick="drawCard('player2')">Draw Card</button>
         </div>
